@@ -4,11 +4,13 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 // connect function connects a react component to a redux store
 import {Switch, Route } from 'react-router-dom';
+// renders the first child <Route> or <Redirect> that matches the location
 
-
+// create a class component that will be universal to all components
 class App extends Component {
-
+// extends Component creates an inheritance to React.Component, and gives component access to React.Component functions
   componentDidMount() {
+    // componentDidMount() is invoked immediately after a component is mounted
     this.props.fetchNotes()
   }
 
