@@ -6,6 +6,8 @@ import { connect } from 'react-redux';
 import {Switch, Route } from 'react-router-dom';
 // renders the first child <Route> or <Redirect> that matches the location
 
+import { fetchNotes } from './actions/loadNotes';
+
 // create a class component that will be universal to all components
 class App extends Component {
 // extends Component creates an inheritance to React.Component, and gives component access to React.Component functions
