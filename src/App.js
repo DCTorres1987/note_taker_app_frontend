@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 // connect function connects a react component to a redux store
 import {Switch, Route } from 'react-router-dom';
 // renders the first child <Route> or <Redirect> that matches the location
-
+import NoteList from './notes/noteList';
 import { fetchNotes } from './actions/loadNotes';
 
 // create a class component that will be universal to all components
@@ -22,7 +22,7 @@ class App extends Component {
       <>
         <div className="App">
           <Switch>
-            <Route path='/categories' />
+            <Route path='/categories' component= {NoteList} />
           </Switch>          
         </div>
       </>
