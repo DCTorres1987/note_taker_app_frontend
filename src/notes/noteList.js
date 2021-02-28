@@ -2,11 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const NoteList = ({noteList}) => {
-    return (
-        <div>
-
-        </div>
-    )
+    console.log(noteList);
 }
 
 const mapStateToProps = (state) => {
